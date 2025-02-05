@@ -1,0 +1,88 @@
+:root{
+	--basicSize: 11pt;
+}
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	font-size: var(--basicSize);
+}
+
+#title{
+	font-size: 30pt;
+	text-align: center;
+}
+
+h1{
+	font-size: calc(var(--basicSize) * 1.5);
+}
+
+h2{
+	font-size: calc(var(--basicSize) * 1.15);
+}
+
+body{
+	margin: 0;
+}
+
+#menu{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+#hoverModeButton{
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: transparent;
+	display: inline;
+	border: 1px solid black;
+	height: fit-content;
+}
+
+#hoverModeButton.Toggled{
+	background-color: white;
+}
+
+.Section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5%;
+	margin: 0.5%;
+	width: 100%;
+	max-width: 100%;
+}
+
+.SectionHead{
+	--margin: 0.5%;
+	margin-top: var(--margin);
+	margin-bottom: var(--margin);
+	cursor: pointer;
+}
+
+.SectionHead *{
+	margin: 0;
+}
+
+.SectionBody{
+	display: none;
+	--margin: 1.5%;
+	--padding: 0.5%;
+	margin-left: var(--margin);
+	margin-right: var(--margin);
+	padding-left: var(--padding);
+	padding-right: var(--padding);
+	word-wrap: break-word;
+	max-height: 500px;
+	overflow-y: auto;
+	scrollbar-width: thin;
+}
+
+#content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
